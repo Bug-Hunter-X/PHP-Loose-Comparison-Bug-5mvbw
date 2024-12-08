@@ -1,0 +1,5 @@
+# PHP Loose Comparison Bug
+This repository demonstrates a common bug in PHP programming related to loose comparison. The bug occurs when using the == operator instead of the === operator for comparison. The == operator performs loose comparison, while the === operator performs strict comparison. This difference can lead to unexpected results and errors in your code.
+
+## Bug Description
+The provided PHP function demonstrates how loose comparison can lead to unexpected results. The function compares two variables using the == operator.  If the values are equal (after type juggling), it returns true, otherwise, false. In the case of the function, this produces a buggy result because it does not strictly compare the input variables. In the example use case, when we compare 1 and "1", they are considered equal by the loose comparison operator, even though they are of different types.
